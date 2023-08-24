@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Caveat&family=Cedarville+Cursive&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Capstone</title>
+    <style>
+        body{
+            margin: auto;
+        }
+        .head{
+            display: flex;
+            flex-direction: column;
+            background-color: #e4f9f5;
+            height: 700px;
+            align-items: center;
+            align-content: center;
+
+        }
+        .abdullah{
+            font-size: 4rem;
+            color: #66bfbf;
+            margin-top: 100px;
+            margin-bottom: -10px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: 'Caveat', cursive;
+            font-family: 'Cedarville Cursive', cursive;
+            font-family: 'Sacramento', cursive;
+
+        }
+        .headpara{
+            font-size: 3rem;
+            color: #66bfbf;
+            margin-bottom: -5px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-family: 'Caveat', cursive;
+            font-family: 'Cedarville Cursive', cursive;
+            font-family: 'Sacramento', cursive;
+
+        }
+        .centerprofile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+        .centerhead{
+            font-size: 40px;
+            color: #66bfbf;
+            font-family: "Montserrat", sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            margin-left: 20px;
+
+        }
+        .profilepic{
+            border-radius: 60%;
+            margin-top: 100px;
+        }
+        .centerpara{
+            font-family: "Merriweather", serif;
+            text-align: center;
+            width: 460px;
+            height: auto;
+            font-size: 1rem;
+            line-height: 2;
+            color: #40514e;
+        }
+        hr{
+            margin-top: 80px;
+            margin-bottom: 100px;
+            border-top: 1px dashed #66bfbf;
+            width: 5%;
+        }
+         .skill{
+            text-align: center;
+            color: #66bfbf;
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin-bottom: 120px;
+        } 
+        .skilinfo{
+            
+            font-family: "Montserrat", sans-serif;
+            display: grid;
+            grid-template-columns: 100px 100px 40px 100px 100px 100px 100px 100px ;
+            grid-template-rows: 50px 100px 80px 50px 100px 100px;
+            justify-content: center;
+        }
+        .skill1pic{
+            height: 200px;
+            width: 200px;
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end: 3;
+        
+        }
+        .skill1head{
+            color: #11999e;
+            font-size: 1.1rem;
+            grid-column-start:4;
+            grid-column-end:9;
+            grid-row-start:1;
+            grid-row-end: 2;
+        }
+        .skill1p{
+            font-family: "Merriweather", serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            color: #40514e;
+            grid-column-start:4;
+            grid-column-end:9;
+            grid-row-start:2;
+            grid-row-end: 5;
+        } 
+        .skill2pic{
+            height: 200px;
+            width: 200px;
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:4;
+            grid-row-end: 7;
+
+        }
+        .skill2head{
+            color: #11999e;
+            font-size: 1.1rem;
+            grid-column-start:4;
+            grid-column-end:9;
+            grid-row-start:4;
+            grid-row-end: 5;
+        }
+        .skill2p{
+            font-family: "Merriweather", serif;
+            font-size: 1rem;
+            text-align: left;
+            line-height: 1.5;
+            color: #40514e;
+            grid-column-start:4;
+            grid-column-end:9;
+            grid-row-start:5;
+            grid-row-end: 7;
+        } 
+        .gtouch{
+            
+            text-align: center;
+        }
+        .gtouch p{
+            font-size: 1rem;
+            line-height: 2;
+            margin-bottom: 50px;
+        }
+        button{
+            
+            height: 50px;
+            width: 150px;
+            font-size: 25px;
+            border-radius: 12px;
+            background-color: #11cdd4;
+            color: beige;
+            margin-bottom: 100px;
+        }
+        .footer{
+            background-color: #66bfbf;
+            height: 200px;
+            text-align: center;
+        }
+        .links{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            height: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color:#11999e;
+        }
+        a{
+            color:#11999e;
+        }
+        .top-cloud{
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            margin-left: 1010px;
+            margin-top: 30px;
+        }
+        .bottom-cloud{
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            margin-right: 950px;
+            margin-top: 350px;
+
+        }
+
+        @media(max-width:900px)
+        {
+            .head{
+                height: 400px;
+                width: auto;
+    
+            }
+            .abdullah{
+                font-size: 20px;
+                margin-left: 20px;
+            }
+            .headpara{
+                font-size: 20px;
+                
+                
+            }
+            .mountain{
+                height: 200px;
+                width: 300px;
+                margin-top: 55px;
+            
+            }
+            .top-cloud{
+                margin: auto;
+            }
+            .bottom-cloud{
+                margin: auto;
+                top: 200px;
+            }
+            .centerpara{
+                font-size: small;
+                width: auto;
+            }
+            .skilinfo{
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+            }
+            .skill1pic {
+                height: 100px;
+                width: 100px;
+            }
+            .skill2pic {
+                height: 100px;
+                width: 100px;
+            }
+            .skill1p{
+                width: 300px;
+            }
+            .skill2p{
+                width: 300px;
+            }
+            .gtouch{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .gtouch p{
+                font-size: 11px;
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: auto;
+            }
+            .links{
+                flex-direction: column;
+            }
+             
+        }
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img class="top-cloud" src="./cloud.png"  alt="cloud">
+        <h1 class="abdullah"> I'm ABDULLAH</h1>
+        <p class="headpara"> a <u>web</u> developer</p> 
+        <img src="./mountain.png" alt="MOUNTAIN" height="400px" width="600px" class="mountain" >
+        <img class="bottom-cloud" src="./cloud.png"  alt="cloud">
+    </div>
+
+    <div class="centerprofile">
+        <img src="./profile pic.png" height="200px" width="200px" alt="pp" class="profilepic">
+        <h2 class="centerhead">Hello.</h2>
+        <p class="centerpara">I am an iOS and Web Developer. I'm the founder and CTO of The App Brewery. I ❤️ coffee and brew my own beers.</p>
+        <hr>
+    </div>
+
+    <div class="myskill">
+        <h2 class="skill">My Skills</h2>
+        <div class="skilinfo">
+            <img src="./cat.gif" alt="cat" class="skill1pic">
+            <h3 class="skill1head">Design and Developnment</h3>
+            <p class="skill1p">I started learning to code when I was 12 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+            <img src="./call.png" alt="callcenter" class="skill2pic">
+            <h3 class="skill2head">Calling Agent</h3>
+            <p class="skill2p">Experienced Calling Agent with strong communication and problem-solving skills, Effective team player dedicated to delivering exceptional service and prooven track record.</p>
+        </div>
+        <hr>
+    </div>
+    <div class="gtouch">
+        <h2 style="font-size: 2.5rem; color:#11999e;">
+            Get In Touch
+        </h2>
+        <h5 style="font-size: 1.5rem; color: #11999e">
+            If you love hot wings as much as I do.
+        </h5>
+        <p>Love hot wings as much as I do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
+        <button>Contact Me</button>
+    </div>
+
+    <div class="footer">
+        <div class="links">
+        <div class="linkedin"><a href="https://www.linkedin.com/in/abdullah-jutt-9a556b230/">Linkedin</a></div>
+        <div class="facebook"><a href="https://www.facebook.com/abdullah.afzaal.77/">facebook</a></div>
+        <div class="instagram"><a href="https://www.instagram.com/abdullah._jutt/">Instagram</a></div>
+        </div>
+        <p style="color: aliceblue;">copyright@ Abdulah Jutt</p>
+
+    </div>
+    
+</body>
+</html>
